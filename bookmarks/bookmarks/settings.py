@@ -35,6 +35,9 @@ INSTALLED_APPS = [
     # my apps
     'account.apps.AccountConfig',
 
+    # 3rd party apps
+    'social_django',
+
     # Django pre-installed apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -153,3 +156,6 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
 ]
+
+# Allowed host
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
