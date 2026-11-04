@@ -69,3 +69,10 @@ Desktop.ini
 
 # Python version manager
 .python-version
+
+# Local HTTPS development certificates
+cert.crt
+cert.key
+
+# Google OAuth2 client secret file
+client_secret_120480941642-qto0g57og3d6ofij2tmuj9q0ocjlne0t.apps.googleusercontent.com.json
