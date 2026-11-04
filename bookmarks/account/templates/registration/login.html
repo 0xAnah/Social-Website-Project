@@ -21,4 +21,14 @@
             <a href="{% url 'password_reset' %}">Forgotten your password?</a>
         </p>
     </div>
+    <div class="social">
+        <ul>
+            <li class="google">
+                <form method="post" action="{% url 'social:begin' 'google-oauth2' %}">
+                    {% csrf_token %}
+                    <button type="submit">Sign in with Google</button>
+                </form>
+            </li>
+        </ul>
+    </div>
 {% endblock %}
