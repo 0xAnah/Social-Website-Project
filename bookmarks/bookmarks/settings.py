@@ -34,7 +34,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # my apps
     'account.apps.AccountConfig',
-    'images.apps.ImageConfig',
+    'images.apps.ImagesConfig',
 
     # 3rd party apps
     'social_django',
