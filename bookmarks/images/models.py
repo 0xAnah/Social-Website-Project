@@ -2,6 +2,7 @@ from django.db import models
 from django.utils.text import slugify
 from django.conf import settings
 from django.contrib.auth import get_user_model
+from django.urls import reverse
 
 # Create your models here.
 
@@ -26,4 +27,7 @@ class Image(models.Model):
         if not self.slug:
             self.slug = slugify(self.title)
         return super().save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return reverse('images:detail', args=[self.id, self.slug])
 
